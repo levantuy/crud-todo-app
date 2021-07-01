@@ -12,6 +12,7 @@ export default function Form() {
     const todo = {
       title,
       complete: false,
+      datetime: firebase.database.ServerValue.TIMESTAMP
     };
 
     todoRef.push(todo);
